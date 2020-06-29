@@ -1,0 +1,2044 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_4561ebf0fb424cab804c60a42158afc6 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_4561ebf0fb424cab804c60a42158afc6" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_4561ebf0fb424cab804c60a42158afc6 = L.map(
+                                  'map_4561ebf0fb424cab804c60a42158afc6',
+                                  {center: [40.6501038,-73.9495823],
+                                  zoom: 11,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_719739e8aa484ea58412ebc6aab62ba0 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_4561ebf0fb424cab804c60a42158afc6);
+        
+    
+            var circle_marker_afefa998384647c9a8f141413205f184 = L.circleMarker(
+                [40.68068715,-73.88723227414894],
+                {
+  "bubblingMouseEvents": true,
+  "color": "orange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4561ebf0fb424cab804c60a42158afc6);
+            
+    
+            var popup_7cbd4593baeb49569bba33280f422d06 = L.popup({maxWidth: '300'});
+
+            
+                var html_db21d2267efb4184bb1f90cc8aee2263 = $('<div id="html_db21d2267efb4184bb1f90cc8aee2263" style="width: 100.0%; height: 100.0%;">Arlington Library - Cluster 1<br> Top 2 venues: food, shops<br> Bottom 2 venues: arts_entertainment, nightlife</div>')[0];
+                popup_7cbd4593baeb49569bba33280f422d06.setContent(html_db21d2267efb4184bb1f90cc8aee2263);
+            
+
+            circle_marker_afefa998384647c9a8f141413205f184.bindPopup(popup_7cbd4593baeb49569bba33280f422d06);
+
+            
+        
+    
+            var circle_marker_8d3994ab9ff243e8945b17e56b437bb5 = L.circleMarker(
+                [40.63362720000001,-74.02953071176773],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4561ebf0fb424cab804c60a42158afc6);
+            
+    
+            var popup_1a4b1d393d52417ba3d39a91922a85e4 = L.popup({maxWidth: '300'});
+
+            
+                var html_34a87fe7bb8149bd9d9feb05d869ea08 = $('<div id="html_34a87fe7bb8149bd9d9feb05d869ea08" style="width: 100.0%; height: 100.0%;">Bay Ridge Library - Cluster 0<br> Top 2 venues: food, nightlife<br> Bottom 2 venues: travel, parks_outdoors</div>')[0];
+                popup_1a4b1d393d52417ba3d39a91922a85e4.setContent(html_34a87fe7bb8149bd9d9feb05d869ea08);
+            
+
+            circle_marker_8d3994ab9ff243e8945b17e56b437bb5.bindPopup(popup_1a4b1d393d52417ba3d39a91922a85e4);
+
+            
+        
+    
+            var circle_marker_76c5d1452086412e94fdc891d034b64c = L.circleMarker(
+                [40.68179695,-73.95616860170773],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4561ebf0fb424cab804c60a42158afc6);
+            
+    
+            var popup_e3d3f49fef8b42539df5cdc2120f0582 = L.popup({maxWidth: '300'});
+
+            
+                var html_52318e136a05422a81cb270802228c71 = $('<div id="html_52318e136a05422a81cb270802228c71" style="width: 100.0%; height: 100.0%;">Bedford Library - Cluster 3<br> Top 2 venues: food, shops<br> Bottom 2 venues: parks_outdoors, education</div>')[0];
+                popup_e3d3f49fef8b42539df5cdc2120f0582.setContent(html_52318e136a05422a81cb270802228c71);
+            
+
+            circle_marker_76c5d1452086412e94fdc891d034b64c.bindPopup(popup_e3d3f49fef8b42539df5cdc2120f0582);
+
+            
+        
+    
+            var circle_marker_10de76b3a69c47d393c31f9be91f0b04 = L.circleMarker(
+                [40.63887805,-73.98901040627747],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4561ebf0fb424cab804c60a42158afc6);
+            
+    
+            var popup_c3083d25fb484145b81571c03a604039 = L.popup({maxWidth: '300'});
+
+            
+                var html_0b349086f29b4b719b970ad39ebe9e7e = $('<div id="html_0b349086f29b4b719b970ad39ebe9e7e" style="width: 100.0%; height: 100.0%;">Borough Park Library - Cluster 2<br> Top 2 venues: food, shops<br> Bottom 2 venues: nightlife, education</div>')[0];
+                popup_c3083d25fb484145b81571c03a604039.setContent(html_0b349086f29b4b719b970ad39ebe9e7e);
+            
+
+            circle_marker_10de76b3a69c47d393c31f9be91f0b04.bindPopup(popup_c3083d25fb484145b81571c03a604039);
+
+            
+        
+    
+            var circle_marker_bd6b783f3a404ca1b568030ef0304dbf = L.circleMarker(
+                [40.57964365,-73.96111081059607],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4561ebf0fb424cab804c60a42158afc6);
+            
+    
+            var popup_b93820e3982e4ac1b8681043b3f5b66f = L.popup({maxWidth: '300'});
+
+            
+                var html_f89e39bea6fc423993d9bcb4cbbc10fc = $('<div id="html_f89e39bea6fc423993d9bcb4cbbc10fc" style="width: 100.0%; height: 100.0%;">Brighton Beach Library - Cluster 0<br> Top 2 venues: food, shops<br> Bottom 2 venues: education, building</div>')[0];
+                popup_b93820e3982e4ac1b8681043b3f5b66f.setContent(html_f89e39bea6fc423993d9bcb4cbbc10fc);
+            
+
+            circle_marker_bd6b783f3a404ca1b568030ef0304dbf.bindPopup(popup_b93820e3982e4ac1b8681043b3f5b66f);
+
+            
+        
+    
+            var circle_marker_c4a5f210a5f94ce586648c9484479ad4 = L.circleMarker(
+                [40.696018,-73.991206],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4561ebf0fb424cab804c60a42158afc6);
+            
+    
+            var popup_1080ae1613304ac3ae4817d0823cd78a = L.popup({maxWidth: '300'});
+
+            
+                var html_73921ab2a8644e97b176370380e31959 = $('<div id="html_73921ab2a8644e97b176370380e31959" style="width: 100.0%; height: 100.0%;">Brooklyn Heights Library - Cluster 3<br> Top 2 venues: food, shops<br> Bottom 2 venues: travel, education</div>')[0];
+                popup_1080ae1613304ac3ae4817d0823cd78a.setContent(html_73921ab2a8644e97b176370380e31959);
+            
+
+            circle_marker_c4a5f210a5f94ce586648c9484479ad4.bindPopup(popup_1080ae1613304ac3ae4817d0823cd78a);
+
+            
+        
+    
+            var circle_marker_b6d6692cffd34621adf1c00f1f7551ff = L.circleMarker(
+                [40.67537165,-73.9485651],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4561ebf0fb424cab804c60a42158afc6);
+            
+    
+            var popup_3181f39f72c346c2a698fad405fdb1f6 = L.popup({maxWidth: '300'});
+
+            
+                var html_481c25bde9fd4c2ab11141d43e9d86d7 = $('<div id="html_481c25bde9fd4c2ab11141d43e9d86d7" style="width: 100.0%; height: 100.0%;">Brower Park Library - Cluster 2<br> Top 2 venues: food, shops<br> Bottom 2 venues: travel, education</div>')[0];
+                popup_3181f39f72c346c2a698fad405fdb1f6.setContent(html_481c25bde9fd4c2ab11141d43e9d86d7);
+            
+
+            circle_marker_b6d6692cffd34621adf1c00f1f7551ff.bindPopup(popup_3181f39f72c346c2a698fad405fdb1f6);
+
+            
+        
+    
+            var circle_marker_3ba959378c7f408a9dfde1e48274da54 = L.circleMarker(
+                [40.67150425,-73.90859604303299],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4561ebf0fb424cab804c60a42158afc6);
+            
+    
+            var popup_fbd4b51d0dc54b808853afe1a45ad859 = L.popup({maxWidth: '300'});
+
+            
+                var html_b40d96f9f5d246ea8ff9fda601393020 = $('<div id="html_b40d96f9f5d246ea8ff9fda601393020" style="width: 100.0%; height: 100.0%;">Brownsville Library - Cluster 2<br> Top 2 venues: shops, food<br> Bottom 2 venues: nightlife, education</div>')[0];
+                popup_fbd4b51d0dc54b808853afe1a45ad859.setContent(html_b40d96f9f5d246ea8ff9fda601393020);
+            
+
+            circle_marker_3ba959378c7f408a9dfde1e48274da54.bindPopup(popup_fbd4b51d0dc54b808853afe1a45ad859);
+
+            
+        
+    
+            var circle_marker_11f206214b35483bb52bc03347dee391 = L.circleMarker(
+                [40.7045433,-73.93964337120033],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4561ebf0fb424cab804c60a42158afc6);
+            
+    
+            var popup_f1e25aa4affb4a63a7a3bc044949bd2c = L.popup({maxWidth: '300'});
+
+            
+                var html_2664b777208f4775955e7e481bddebe1 = $('<div id="html_2664b777208f4775955e7e481bddebe1" style="width: 100.0%; height: 100.0%;">Bushwick Library - Cluster 0<br> Top 2 venues: food, nightlife<br> Bottom 2 venues: parks_outdoors, education</div>')[0];
+                popup_f1e25aa4affb4a63a7a3bc044949bd2c.setContent(html_2664b777208f4775955e7e481bddebe1);
+            
+
+            circle_marker_11f206214b35483bb52bc03347dee391.bindPopup(popup_f1e25aa4affb4a63a7a3bc044949bd2c);
+
+            
+        
+    
+            var circle_marker_463a75b2579740fea946a89e7892a5e3 = L.circleMarker(
+                [40.696018,-73.991206],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4561ebf0fb424cab804c60a42158afc6);
+            
+    
+            var popup_8485dd63b8514f1bb899ae513f992c53 = L.popup({maxWidth: '300'});
+
+            
+                var html_80552978dc114f008a5df4c993d7641e = $('<div id="html_80552978dc114f008a5df4c993d7641e" style="width: 100.0%; height: 100.0%;">Business & Career Library - Cluster 3<br> Top 2 venues: food, shops<br> Bottom 2 venues: travel, education</div>')[0];
+                popup_8485dd63b8514f1bb899ae513f992c53.setContent(html_80552978dc114f008a5df4c993d7641e);
+            
+
+            circle_marker_463a75b2579740fea946a89e7892a5e3.bindPopup(popup_8485dd63b8514f1bb899ae513f992c53);
+
+            
+        
+    
+            var circle_marker_be5cf6c70d574e28a2c7beccdb6d6134 = L.circleMarker(
+                [40.642210299999995,-73.89952445467358],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4561ebf0fb424cab804c60a42158afc6);
+            
+    
+            var popup_c20faf9b5b3a4906a30e3b05ca5400ca = L.popup({maxWidth: '300'});
+
+            
+                var html_6633b503598247858db9a64c37f16ea8 = $('<div id="html_6633b503598247858db9a64c37f16ea8" style="width: 100.0%; height: 100.0%;">Canarsie Library - Cluster 2<br> Top 2 venues: food, shops<br> Bottom 2 venues: parks_outdoors, nightlife</div>')[0];
+                popup_c20faf9b5b3a4906a30e3b05ca5400ca.setContent(html_6633b503598247858db9a64c37f16ea8);
+            
+
+            circle_marker_be5cf6c70d574e28a2c7beccdb6d6134.bindPopup(popup_c20faf9b5b3a4906a30e3b05ca5400ca);
+
+            
+        
+    
+            var circle_marker_57e1f9f7f96a494cb6af932cc2395a9f = L.circleMarker(
+                [40.68322070000001,-73.998022906],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4561ebf0fb424cab804c60a42158afc6);
+            
+    
+            var popup_b3e95d2acd914e48a1ac793ca96f8343 = L.popup({maxWidth: '300'});
+
+            
+                var html_71cfa079412846dbb9ee89aaed1bdc89 = $('<div id="html_71cfa079412846dbb9ee89aaed1bdc89" style="width: 100.0%; height: 100.0%;">Carroll Gardens Library - Cluster 3<br> Top 2 venues: food, shops<br> Bottom 2 venues: arts_entertainment, travel</div>')[0];
+                popup_b3e95d2acd914e48a1ac793ca96f8343.setContent(html_71cfa079412846dbb9ee89aaed1bdc89);
+            
+
+            circle_marker_57e1f9f7f96a494cb6af932cc2395a9f.bindPopup(popup_b3e95d2acd914e48a1ac793ca96f8343);
+
+            
+        
+    
+            var circle_marker_3634cf28350446288634e75150929325 = L.circleMarker(
+                [40.6721312,-73.9681890561948],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4561ebf0fb424cab804c60a42158afc6);
+            
+    
+            var popup_f278f35f92ac4adaa712b074fd9689c5 = L.popup({maxWidth: '300'});
+
+            
+                var html_0596887cd575494b8ae620f40ab2a93f = $('<div id="html_0596887cd575494b8ae620f40ab2a93f" style="width: 100.0%; height: 100.0%;">Central Library - Cluster 0<br> Top 2 venues: food, shops<br> Bottom 2 venues: nightlife, travel</div>')[0];
+                popup_f278f35f92ac4adaa712b074fd9689c5.setContent(html_0596887cd575494b8ae620f40ab2a93f);
+            
+
+            circle_marker_3634cf28350446288634e75150929325.bindPopup(popup_f278f35f92ac4adaa712b074fd9689c5);
+
+            
+        
+    
+            var circle_marker_3488bc58f8584aeb8c2a2fa6e5ad367f = L.circleMarker(
+                [40.63591028571428,-73.9478684047619],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4561ebf0fb424cab804c60a42158afc6);
+            
+    
+            var popup_6f7be5cfa4654fdba260289b31b542fc = L.popup({maxWidth: '300'});
+
+            
+                var html_e3b0589e0cf74064a6d6961f6cbb53ea = $('<div id="html_e3b0589e0cf74064a6d6961f6cbb53ea" style="width: 100.0%; height: 100.0%;">Clarendon Library - Cluster 0<br> Top 2 venues: food, shops<br> Bottom 2 venues: nightlife, education</div>')[0];
+                popup_6f7be5cfa4654fdba260289b31b542fc.setContent(html_e3b0589e0cf74064a6d6961f6cbb53ea);
+            
+
+            circle_marker_3488bc58f8584aeb8c2a2fa6e5ad367f.bindPopup(popup_6f7be5cfa4654fdba260289b31b542fc);
+
+            
+        
+    
+            var circle_marker_3632f80aaa7a4d3483124ebefeb47625 = L.circleMarker(
+                [40.68737605,-73.96605012620775],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4561ebf0fb424cab804c60a42158afc6);
+            
+    
+            var popup_ef1a56e588b04fc5839989161de32348 = L.popup({maxWidth: '300'});
+
+            
+                var html_f51bb552248b4b5f86406e3c04627427 = $('<div id="html_f51bb552248b4b5f86406e3c04627427" style="width: 100.0%; height: 100.0%;">Clinton Hill Library - Cluster 0<br> Top 2 venues: food, nightlife<br> Bottom 2 venues: travel, education</div>')[0];
+                popup_ef1a56e588b04fc5839989161de32348.setContent(html_f51bb552248b4b5f86406e3c04627427);
+            
+
+            circle_marker_3632f80aaa7a4d3483124ebefeb47625.bindPopup(popup_ef1a56e588b04fc5839989161de32348);
+
+            
+        
+    
+            var circle_marker_8783934d68ae4f93aa475585b5f87d4a = L.circleMarker(
+                [40.576725399999994,-73.9860736918353],
+                {
+  "bubblingMouseEvents": true,
+  "color": "orange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4561ebf0fb424cab804c60a42158afc6);
+            
+    
+            var popup_3ab418863c1d4503bf84e08b789e164a = L.popup({maxWidth: '300'});
+
+            
+                var html_0d8ca7b92e08469a9ce00fe8b87dbaad = $('<div id="html_0d8ca7b92e08469a9ce00fe8b87dbaad" style="width: 100.0%; height: 100.0%;">Coney Island Library - Cluster 1<br> Top 2 venues: food, shops<br> Bottom 2 venues: parks_outdoors, nightlife</div>')[0];
+                popup_3ab418863c1d4503bf84e08b789e164a.setContent(html_0d8ca7b92e08469a9ce00fe8b87dbaad);
+            
+
+            circle_marker_8783934d68ae4f93aa475585b5f87d4a.bindPopup(popup_3ab418863c1d4503bf84e08b789e164a);
+
+            
+        
+    
+            var circle_marker_82300a90192e4b2c94f97ab5a9957556 = L.circleMarker(
+                [40.6408341,-73.96597349154905],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4561ebf0fb424cab804c60a42158afc6);
+            
+    
+            var popup_a822e4622995466f859a73cd0f34f744 = L.popup({maxWidth: '300'});
+
+            
+                var html_f4fdbea278da49dea0f059f6255cce49 = $('<div id="html_f4fdbea278da49dea0f059f6255cce49" style="width: 100.0%; height: 100.0%;">Cortelyou Library - Cluster 2<br> Top 2 venues: food, shops<br> Bottom 2 venues: education, building</div>')[0];
+                popup_a822e4622995466f859a73cd0f34f744.setContent(html_f4fdbea278da49dea0f059f6255cce49);
+            
+
+            circle_marker_82300a90192e4b2c94f97ab5a9957556.bindPopup(popup_a822e4622995466f859a73cd0f34f744);
+
+            
+        
+    
+            var circle_marker_26edb981d4994628843f45f86bad7a14 = L.circleMarker(
+                [40.66123505,-73.94813676357616],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4561ebf0fb424cab804c60a42158afc6);
+            
+    
+            var popup_2a76f4b2585545c880c94f82bde35208 = L.popup({maxWidth: '300'});
+
+            
+                var html_7156808bdb4349f983a2c845c9718466 = $('<div id="html_7156808bdb4349f983a2c845c9718466" style="width: 100.0%; height: 100.0%;">Crown Heights Library - Cluster 2<br> Top 2 venues: food, shops<br> Bottom 2 venues: nightlife, education</div>')[0];
+                popup_2a76f4b2585545c880c94f82bde35208.setContent(html_7156808bdb4349f983a2c845c9718466);
+            
+
+            circle_marker_26edb981d4994628843f45f86bad7a14.bindPopup(popup_2a76f4b2585545c880c94f82bde35208);
+
+            
+        
+    
+            var circle_marker_3cac247b6f9b43f2831c160dce586f28 = L.circleMarker(
+                [40.67274365,-73.87404400397702],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4561ebf0fb424cab804c60a42158afc6);
+            
+    
+            var popup_1b4579cc36d849869838976589e94764 = L.popup({maxWidth: '300'});
+
+            
+                var html_1ac8a96436fa482e8b431eecd6575453 = $('<div id="html_1ac8a96436fa482e8b431eecd6575453" style="width: 100.0%; height: 100.0%;">Cypress Hills Library - Cluster 2<br> Top 2 venues: food, shops<br> Bottom 2 venues: education, building</div>')[0];
+                popup_1b4579cc36d849869838976589e94764.setContent(html_1ac8a96436fa482e8b431eecd6575453);
+            
+
+            circle_marker_3cac247b6f9b43f2831c160dce586f28.bindPopup(popup_1b4579cc36d849869838976589e94764);
+
+            
+        
+    
+            var circle_marker_9c28db1bebfa4a8eafc2a6b9fe24b387 = L.circleMarker(
+                [40.694818100000006,-73.92839860068831],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4561ebf0fb424cab804c60a42158afc6);
+            
+    
+            var popup_d860bdcaffbc4609a76a0735c9b20058 = L.popup({maxWidth: '300'});
+
+            
+                var html_16a63f64fbc040c8991ab14c736970df = $('<div id="html_16a63f64fbc040c8991ab14c736970df" style="width: 100.0%; height: 100.0%;">DeKalb Library - Cluster 2<br> Top 2 venues: food, nightlife<br> Bottom 2 venues: parks_outdoors, education</div>')[0];
+                popup_d860bdcaffbc4609a76a0735c9b20058.setContent(html_16a63f64fbc040c8991ab14c736970df);
+            
+
+            circle_marker_9c28db1bebfa4a8eafc2a6b9fe24b387.bindPopup(popup_d860bdcaffbc4609a76a0735c9b20058);
+
+            
+        
+    
+            var circle_marker_77544b0b91e348838d7aeed822a2d5bd = L.circleMarker(
+                [40.6163224,-74.0119970730421],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4561ebf0fb424cab804c60a42158afc6);
+            
+    
+            var popup_bf8eff55716045b996271c0555bb3f57 = L.popup({maxWidth: '300'});
+
+            
+                var html_4acc9ebc1d8845b88638c7e77fcc03d8 = $('<div id="html_4acc9ebc1d8845b88638c7e77fcc03d8" style="width: 100.0%; height: 100.0%;">Dyker Library - Cluster 2<br> Top 2 venues: food, shops<br> Bottom 2 venues: education, building</div>')[0];
+                popup_bf8eff55716045b996271c0555bb3f57.setContent(html_4acc9ebc1d8845b88638c7e77fcc03d8);
+            
+
+            circle_marker_77544b0b91e348838d7aeed822a2d5bd.bindPopup(popup_bf8eff55716045b996271c0555bb3f57);
+
+            
+        
+    
+            var circle_marker_0251cb456e074275b38827517c2e7212 = L.circleMarker(
+                [40.6557085,-73.91494179225977],
+                {
+  "bubblingMouseEvents": true,
+  "color": "orange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4561ebf0fb424cab804c60a42158afc6);
+            
+    
+            var popup_4a7a099759b849a192946c693ed96e3e = L.popup({maxWidth: '300'});
+
+            
+                var html_1f4609ec426e48cebe774ea25de6313f = $('<div id="html_1f4609ec426e48cebe774ea25de6313f" style="width: 100.0%; height: 100.0%;">East Flatbush Library - Cluster 1<br> Top 2 venues: food, shops<br> Bottom 2 venues: education, building</div>')[0];
+                popup_4a7a099759b849a192946c693ed96e3e.setContent(html_1f4609ec426e48cebe774ea25de6313f);
+            
+
+            circle_marker_0251cb456e074275b38827517c2e7212.bindPopup(popup_4a7a099759b849a192946c693ed96e3e);
+
+            
+        
+    
+            var circle_marker_d5721cdca70e422884424b4ff0486ef3 = L.circleMarker(
+                [40.66846435,-73.93362670562745],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4561ebf0fb424cab804c60a42158afc6);
+            
+    
+            var popup_7f6c798e0bf7435db844d5db9939cc55 = L.popup({maxWidth: '300'});
+
+            
+                var html_237f6c2442c74b85a47de2e3b43e67f6 = $('<div id="html_237f6c2442c74b85a47de2e3b43e67f6" style="width: 100.0%; height: 100.0%;">Eastern Parkway Library - Cluster 2<br> Top 2 venues: food, shops<br> Bottom 2 venues: nightlife, education</div>')[0];
+                popup_7f6c798e0bf7435db844d5db9939cc55.setContent(html_237f6c2442c74b85a47de2e3b43e67f6);
+            
+
+            circle_marker_d5721cdca70e422884424b4ff0486ef3.bindPopup(popup_7f6c798e0bf7435db844d5db9939cc55);
+
+            
+        
+    
+            var circle_marker_0f4f78e2bcc44787a7d0d431ed77c266 = L.circleMarker(
+                [40.6519214,-73.95823323761198],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4561ebf0fb424cab804c60a42158afc6);
+            
+    
+            var popup_ad645d4dcbd94d238c1392d56f53761f = L.popup({maxWidth: '300'});
+
+            
+                var html_798bb9cec39147d6b5869972f53ee9fc = $('<div id="html_798bb9cec39147d6b5869972f53ee9fc" style="width: 100.0%; height: 100.0%;">Flatbush Library - Cluster 3<br> Top 2 venues: food, shops<br> Bottom 2 venues: travel, education</div>')[0];
+                popup_ad645d4dcbd94d238c1392d56f53761f.setContent(html_798bb9cec39147d6b5869972f53ee9fc);
+            
+
+            circle_marker_0f4f78e2bcc44787a7d0d431ed77c266.bindPopup(popup_ad645d4dcbd94d238c1392d56f53761f);
+
+            
+        
+    
+            var circle_marker_7f8ab4083f934b4cb77735faed709708 = L.circleMarker(
+                [40.6197222,-73.9333333],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4561ebf0fb424cab804c60a42158afc6);
+            
+    
+            var popup_eb3cc055ee264a4db67d81aea35bccf2 = L.popup({maxWidth: '300'});
+
+            
+                var html_58ad3ceefaae472fa2f240714d1b92d0 = $('<div id="html_58ad3ceefaae472fa2f240714d1b92d0" style="width: 100.0%; height: 100.0%;">Flatlands Library - Cluster 2<br> Top 2 venues: food, shops<br> Bottom 2 venues: parks_outdoors, education</div>')[0];
+                popup_eb3cc055ee264a4db67d81aea35bccf2.setContent(html_58ad3ceefaae472fa2f240714d1b92d0);
+            
+
+            circle_marker_7f8ab4083f934b4cb77735faed709708.bindPopup(popup_eb3cc055ee264a4db67d81aea35bccf2);
+
+            
+        
+    
+            var circle_marker_71a66860460d43a18e7cce1f00ba3467 = L.circleMarker(
+                [40.6187154,-74.03319570000001],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4561ebf0fb424cab804c60a42158afc6);
+            
+    
+            var popup_072b4ba5bef44fd4906f8d861d8edaa9 = L.popup({maxWidth: '300'});
+
+            
+                var html_21b64b79626a4cdaaa20c441c78feae1 = $('<div id="html_21b64b79626a4cdaaa20c441c78feae1" style="width: 100.0%; height: 100.0%;">Fort Hamilton Library - Cluster 0<br> Top 2 venues: food, shops<br> Bottom 2 venues: travel, education</div>')[0];
+                popup_072b4ba5bef44fd4906f8d861d8edaa9.setContent(html_21b64b79626a4cdaaa20c441c78feae1);
+            
+
+            circle_marker_71a66860460d43a18e7cce1f00ba3467.bindPopup(popup_072b4ba5bef44fd4906f8d861d8edaa9);
+
+            
+        
+    
+            var circle_marker_687b5896a90d435ea70dcc9ada269cf1 = L.circleMarker(
+                [40.5913938,-73.9239687],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4561ebf0fb424cab804c60a42158afc6);
+            
+    
+            var popup_4bdff88604ed4d8babbb3e787dfb35bd = L.popup({maxWidth: '300'});
+
+            
+                var html_b9277d765f8041ceb5695a4cb746bbe7 = $('<div id="html_b9277d765f8041ceb5695a4cb746bbe7" style="width: 100.0%; height: 100.0%;">Gerritsen Beach Library - Cluster 2<br> Top 2 venues: food, parks_outdoors<br> Bottom 2 venues: arts_entertainment, travel</div>')[0];
+                popup_4bdff88604ed4d8babbb3e787dfb35bd.setContent(html_b9277d765f8041ceb5695a4cb746bbe7);
+            
+
+            circle_marker_687b5896a90d435ea70dcc9ada269cf1.bindPopup(popup_4bdff88604ed4d8babbb3e787dfb35bd);
+
+            
+        
+    
+            var circle_marker_4cd99f9a0295484ab9130030cee46ac8 = L.circleMarker(
+                [40.59054329999999,-73.97180897393146],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4561ebf0fb424cab804c60a42158afc6);
+            
+    
+            var popup_f0869d34ccac44d1b44760c2e1444649 = L.popup({maxWidth: '300'});
+
+            
+                var html_1c4ae34e4db04156b9d343774e2c1ec4 = $('<div id="html_1c4ae34e4db04156b9d343774e2c1ec4" style="width: 100.0%; height: 100.0%;">Gravesend Library - Cluster 2<br> Top 2 venues: food, shops<br> Bottom 2 venues: nightlife, travel</div>')[0];
+                popup_f0869d34ccac44d1b44760c2e1444649.setContent(html_1c4ae34e4db04156b9d343774e2c1ec4);
+            
+
+            circle_marker_4cd99f9a0295484ab9130030cee46ac8.bindPopup(popup_f0869d34ccac44d1b44760c2e1444649);
+
+            
+        
+    
+            var circle_marker_7c3bc483bbf34a36bbf5a2c6173f85dc = L.circleMarker(
+                [40.725845,-73.950769],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4561ebf0fb424cab804c60a42158afc6);
+            
+    
+            var popup_9f7e4869b39c4456b184ba454f6e5977 = L.popup({maxWidth: '300'});
+
+            
+                var html_f0e89c5921f144e8bcbb828712c13171 = $('<div id="html_f0e89c5921f144e8bcbb828712c13171" style="width: 100.0%; height: 100.0%;">Greenpoint Library - Cluster 0<br> Top 2 venues: food, shops<br> Bottom 2 venues: travel, education</div>')[0];
+                popup_9f7e4869b39c4456b184ba454f6e5977.setContent(html_f0e89c5921f144e8bcbb828712c13171);
+            
+
+            circle_marker_7c3bc483bbf34a36bbf5a2c6173f85dc.bindPopup(popup_9f7e4869b39c4456b184ba454f6e5977);
+
+            
+        
+    
+            var circle_marker_ab3e394b06b64a189c73d9946af92892 = L.circleMarker(
+                [40.6056834,-73.9862628],
+                {
+  "bubblingMouseEvents": true,
+  "color": "orange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4561ebf0fb424cab804c60a42158afc6);
+            
+    
+            var popup_5fb694fd24264fdb84f27037b5ee56f3 = L.popup({maxWidth: '300'});
+
+            
+                var html_518cd3f0a0dc45c09967472bf5783b85 = $('<div id="html_518cd3f0a0dc45c09967472bf5783b85" style="width: 100.0%; height: 100.0%;">Highlawn Library - Cluster 1<br> Top 2 venues: travel, food<br> Bottom 2 venues: education, building</div>')[0];
+                popup_5fb694fd24264fdb84f27037b5ee56f3.setContent(html_518cd3f0a0dc45c09967472bf5783b85);
+            
+
+            circle_marker_ab3e394b06b64a189c73d9946af92892.bindPopup(popup_5fb694fd24264fdb84f27037b5ee56f3);
+
+            
+        
+    
+            var circle_marker_5d7bcb7a54184480b218f8e274130fad = L.circleMarker(
+                [40.59522755,-73.96060450664797],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4561ebf0fb424cab804c60a42158afc6);
+            
+    
+            var popup_971844f004554157821665dcd65aca0b = L.popup({maxWidth: '300'});
+
+            
+                var html_9a6ab63529ba445eb6f11db3d49029ef = $('<div id="html_9a6ab63529ba445eb6f11db3d49029ef" style="width: 100.0%; height: 100.0%;">Homecrest Library - Cluster 2<br> Top 2 venues: food, shops<br> Bottom 2 venues: education, building</div>')[0];
+                popup_971844f004554157821665dcd65aca0b.setContent(html_9a6ab63529ba445eb6f11db3d49029ef);
+            
+
+            circle_marker_5d7bcb7a54184480b218f8e274130fad.bindPopup(popup_971844f004554157821665dcd65aca0b);
+
+            
+        
+    
+            var circle_marker_e03f2248d1be4a408a0c40a4cd351c9c = L.circleMarker(
+                [40.6344855,-73.88932359940381],
+                {
+  "bubblingMouseEvents": true,
+  "color": "orange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4561ebf0fb424cab804c60a42158afc6);
+            
+    
+            var popup_cc462781c6cb434294a69a022cf7c9e8 = L.popup({maxWidth: '300'});
+
+            
+                var html_9174b3168c2c48c1b04c47ccc0670156 = $('<div id="html_9174b3168c2c48c1b04c47ccc0670156" style="width: 100.0%; height: 100.0%;">Jamaica Bay Library - Cluster 1<br> Top 2 venues: shops, food<br> Bottom 2 venues: education, building</div>')[0];
+                popup_cc462781c6cb434294a69a022cf7c9e8.setContent(html_9174b3168c2c48c1b04c47ccc0670156);
+            
+
+            circle_marker_e03f2248d1be4a408a0c40a4cd351c9c.bindPopup(popup_cc462781c6cb434294a69a022cf7c9e8);
+
+            
+        
+    
+            var circle_marker_4ea1aed73d1c40c9b3bbb3affdd68e6a = L.circleMarker(
+                [40.6313424,-73.975488],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4561ebf0fb424cab804c60a42158afc6);
+            
+    
+            var popup_baab500a2050467484b07f5a8181c143 = L.popup({maxWidth: '300'});
+
+            
+                var html_312b5d54ce95417e87d24e20acbbf494 = $('<div id="html_312b5d54ce95417e87d24e20acbbf494" style="width: 100.0%; height: 100.0%;">Kensington Library - Cluster 2<br> Top 2 venues: food, shops<br> Bottom 2 venues: education, building</div>')[0];
+                popup_baab500a2050467484b07f5a8181c143.setContent(html_312b5d54ce95417e87d24e20acbbf494);
+            
+
+            circle_marker_4ea1aed73d1c40c9b3bbb3affdd68e6a.bindPopup(popup_baab500a2050467484b07f5a8181c143);
+
+            
+        
+    
+            var circle_marker_1d12a7d60cc248b88902234541fee246 = L.circleMarker(
+                [40.59491045,-73.94118065107546],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4561ebf0fb424cab804c60a42158afc6);
+            
+    
+            var popup_92322b153540401da765bf086e5e361d = L.popup({maxWidth: '300'});
+
+            
+                var html_f11795a5005047f69143d4f55c7760b2 = $('<div id="html_f11795a5005047f69143d4f55c7760b2" style="width: 100.0%; height: 100.0%;">Kings Bay Library - Cluster 2<br> Top 2 venues: food, shops<br> Bottom 2 venues: nightlife, education</div>')[0];
+                popup_92322b153540401da765bf086e5e361d.setContent(html_f11795a5005047f69143d4f55c7760b2);
+            
+
+            circle_marker_1d12a7d60cc248b88902234541fee246.bindPopup(popup_92322b153540401da765bf086e5e361d);
+
+            
+        
+    
+            var circle_marker_e1f5d293b8c6408c8d32bb873db646ba = L.circleMarker(
+                [40.61026185,-73.95313979936499],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4561ebf0fb424cab804c60a42158afc6);
+            
+    
+            var popup_83d951859d0c4174bba0c36d11e232fc = L.popup({maxWidth: '300'});
+
+            
+                var html_d380d4d225de4045b5a44c28aa9166c6 = $('<div id="html_d380d4d225de4045b5a44c28aa9166c6" style="width: 100.0%; height: 100.0%;">Kings Highway Library - Cluster 2<br> Top 2 venues: food, shops<br> Bottom 2 venues: nightlife, education</div>')[0];
+                popup_83d951859d0c4174bba0c36d11e232fc.setContent(html_d380d4d225de4045b5a44c28aa9166c6);
+            
+
+            circle_marker_e1f5d293b8c6408c8d32bb873db646ba.bindPopup(popup_83d951859d0c4174bba0c36d11e232fc);
+
+            
+        
+    
+            var circle_marker_0b57302fc00c42fb876944e71ce03ff9 = L.circleMarker(
+                [40.71363765,-73.947942951047],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4561ebf0fb424cab804c60a42158afc6);
+            
+    
+            var popup_902e0d700f804191a2c99ac6684c79f4 = L.popup({maxWidth: '300'});
+
+            
+                var html_e060f4681cf942019323172bda5b22ea = $('<div id="html_e060f4681cf942019323172bda5b22ea" style="width: 100.0%; height: 100.0%;">Leonard Library - Cluster 3<br> Top 2 venues: food, nightlife<br> Bottom 2 venues: building, parks_outdoors</div>')[0];
+                popup_902e0d700f804191a2c99ac6684c79f4.setContent(html_e060f4681cf942019323172bda5b22ea);
+            
+
+            circle_marker_0b57302fc00c42fb876944e71ce03ff9.bindPopup(popup_902e0d700f804191a2c99ac6684c79f4);
+
+            
+        
+    
+            var circle_marker_6417bf3039fc492a9b9153e1cc359635 = L.circleMarker(
+                [40.68303425,-73.93481486641453],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4561ebf0fb424cab804c60a42158afc6);
+            
+    
+            var popup_cf04b3181f964a299dd1e0144b2738e3 = L.popup({maxWidth: '300'});
+
+            
+                var html_da070cfdb0b54f14ac74788d4a2c7965 = $('<div id="html_da070cfdb0b54f14ac74788d4a2c7965" style="width: 100.0%; height: 100.0%;">Macon Library - Cluster 0<br> Top 2 venues: food, shops<br> Bottom 2 venues: arts_entertainment, education</div>')[0];
+                popup_cf04b3181f964a299dd1e0144b2738e3.setContent(html_da070cfdb0b54f14ac74788d4a2c7965);
+            
+
+            circle_marker_6417bf3039fc492a9b9153e1cc359635.bindPopup(popup_cf04b3181f964a299dd1e0144b2738e3);
+
+            
+        
+    
+            var circle_marker_d73e6b5ec4c54b7f9f4070667068faa5 = L.circleMarker(
+                [40.6230461,-73.98944085127795],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4561ebf0fb424cab804c60a42158afc6);
+            
+    
+            var popup_c9ea4a5b009645beb47ffba1adaadf0a = L.popup({maxWidth: '300'});
+
+            
+                var html_5e40c6fd743844a3b43e612f31c35310 = $('<div id="html_5e40c6fd743844a3b43e612f31c35310" style="width: 100.0%; height: 100.0%;">Mapleton Library - Cluster 2<br> Top 2 venues: food, shops<br> Bottom 2 venues: education, building</div>')[0];
+                popup_c9ea4a5b009645beb47ffba1adaadf0a.setContent(html_5e40c6fd743844a3b43e612f31c35310);
+            
+
+            circle_marker_d73e6b5ec4c54b7f9f4070667068faa5.bindPopup(popup_c9ea4a5b009645beb47ffba1adaadf0a);
+
+            
+        
+    
+            var circle_marker_f35d990cdc8d4809815530a5565188ca = L.circleMarker(
+                [40.6915784,-73.95127254468616],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4561ebf0fb424cab804c60a42158afc6);
+            
+    
+            var popup_39525096fc674f158ad00186110c5274 = L.popup({maxWidth: '300'});
+
+            
+                var html_2474f23566d94a82930289b104fbfc80 = $('<div id="html_2474f23566d94a82930289b104fbfc80" style="width: 100.0%; height: 100.0%;">Marcy Library - Cluster 0<br> Top 2 venues: food, parks_outdoors<br> Bottom 2 venues: arts_entertainment, education</div>')[0];
+                popup_39525096fc674f158ad00186110c5274.setContent(html_2474f23566d94a82930289b104fbfc80);
+            
+
+            circle_marker_f35d990cdc8d4809815530a5565188ca.bindPopup(popup_39525096fc674f158ad00186110c5274);
+
+            
+        
+    
+            var circle_marker_916e00436c584537a569bb4be536216d = L.circleMarker(
+                [40.6292074,-74.01186791395268],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4561ebf0fb424cab804c60a42158afc6);
+            
+    
+            var popup_d4094d2e25b04d0d8b933c7216a18b28 = L.popup({maxWidth: '300'});
+
+            
+                var html_98f877fec3b34fcab084f34c8e01bc9b = $('<div id="html_98f877fec3b34fcab084f34c8e01bc9b" style="width: 100.0%; height: 100.0%;">McKinley Park Library - Cluster 0<br> Top 2 venues: food, shops<br> Bottom 2 venues: travel, education</div>')[0];
+                popup_d4094d2e25b04d0d8b933c7216a18b28.setContent(html_98f877fec3b34fcab084f34c8e01bc9b);
+            
+
+            circle_marker_916e00436c584537a569bb4be536216d.bindPopup(popup_d4094d2e25b04d0d8b933c7216a18b28);
+
+            
+        
+    
+            var circle_marker_735b1f5999e24a6c938c90c3adb7117c = L.circleMarker(
+                [40.625951,-73.96042790000001],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4561ebf0fb424cab804c60a42158afc6);
+            
+    
+            var popup_24480c1cf64847e78bd5ecacf72b6f92 = L.popup({maxWidth: '300'});
+
+            
+                var html_1692f0185cb4450ca7899e58314aab82 = $('<div id="html_1692f0185cb4450ca7899e58314aab82" style="width: 100.0%; height: 100.0%;">Midwood Library - Cluster 2<br> Top 2 venues: food, shops<br> Bottom 2 venues: education, building</div>')[0];
+                popup_24480c1cf64847e78bd5ecacf72b6f92.setContent(html_1692f0185cb4450ca7899e58314aab82);
+            
+
+            circle_marker_735b1f5999e24a6c938c90c3adb7117c.bindPopup(popup_24480c1cf64847e78bd5ecacf72b6f92);
+
+            
+        
+    
+            var circle_marker_ad0efa31965647298244e2b516fcffb2 = L.circleMarker(
+                [40.6198531,-73.91704104254725],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4561ebf0fb424cab804c60a42158afc6);
+            
+    
+            var popup_462e8c59a0fb4d2abfc18b73cf7ba583 = L.popup({maxWidth: '300'});
+
+            
+                var html_b37464f3c0504308b94009c101e105f3 = $('<div id="html_b37464f3c0504308b94009c101e105f3" style="width: 100.0%; height: 100.0%;">Mill Basin Library - Cluster 2<br> Top 2 venues: food, shops<br> Bottom 2 venues: education, building</div>')[0];
+                popup_462e8c59a0fb4d2abfc18b73cf7ba583.setContent(html_b37464f3c0504308b94009c101e105f3);
+            
+
+            circle_marker_ad0efa31965647298244e2b516fcffb2.bindPopup(popup_462e8c59a0fb4d2abfc18b73cf7ba583);
+
+            
+        
+    
+            var circle_marker_969e0742fd614d018855e684a6e050a4 = L.circleMarker(
+                [40.6651428,-73.8858911],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4561ebf0fb424cab804c60a42158afc6);
+            
+    
+            var popup_0324fcdc2ad441aea567a46315b4a96c = L.popup({maxWidth: '300'});
+
+            
+                var html_7fd76c39ec8f46a6a86f4ee9b3c423ea = $('<div id="html_7fd76c39ec8f46a6a86f4ee9b3c423ea" style="width: 100.0%; height: 100.0%;">New Lots Library - Cluster 2<br> Top 2 venues: food, parks_outdoors<br> Bottom 2 venues: nightlife, education</div>')[0];
+                popup_0324fcdc2ad441aea567a46315b4a96c.setContent(html_7fd76c39ec8f46a6a86f4ee9b3c423ea);
+            
+
+            circle_marker_969e0742fd614d018855e684a6e050a4.bindPopup(popup_0324fcdc2ad441aea567a46315b4a96c);
+
+            
+        
+    
+            var circle_marker_fce7cdec6b0741f99d11098158f01272 = L.circleMarker(
+                [40.60799605,-74.0033744258194],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4561ebf0fb424cab804c60a42158afc6);
+            
+    
+            var popup_413bfd2df1b54996ae8070427ac6ece7 = L.popup({maxWidth: '300'});
+
+            
+                var html_0c44db2f866f4ddf8f1b314a7167aa84 = $('<div id="html_0c44db2f866f4ddf8f1b314a7167aa84" style="width: 100.0%; height: 100.0%;">New Utrecht Library - Cluster 2<br> Top 2 venues: food, shops<br> Bottom 2 venues: education, building</div>')[0];
+                popup_413bfd2df1b54996ae8070427ac6ece7.setContent(html_0c44db2f866f4ddf8f1b314a7167aa84);
+            
+
+            circle_marker_fce7cdec6b0741f99d11098158f01272.bindPopup(popup_413bfd2df1b54996ae8070427ac6ece7);
+
+            
+        
+    
+            var circle_marker_4756d494e050467abe4b607c99598aa3 = L.circleMarker(
+                [40.68347995,-73.97853176724264],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4561ebf0fb424cab804c60a42158afc6);
+            
+    
+            var popup_5e370c65ab274bab91ca3c4fbbd9f9b6 = L.popup({maxWidth: '300'});
+
+            
+                var html_fda223b5647140199bb04c3b8fcab125 = $('<div id="html_fda223b5647140199bb04c3b8fcab125" style="width: 100.0%; height: 100.0%;">Pacific Library - Cluster 3<br> Top 2 venues: food, shops<br> Bottom 2 venues: building, travel</div>')[0];
+                popup_5e370c65ab274bab91ca3c4fbbd9f9b6.setContent(html_fda223b5647140199bb04c3b8fcab125);
+            
+
+            circle_marker_4756d494e050467abe4b607c99598aa3.bindPopup(popup_5e370c65ab274bab91ca3c4fbbd9f9b6);
+
+            
+        
+    
+            var circle_marker_3dc746c4e1ac45f889d101a289ccde59 = L.circleMarker(
+                [40.632634100000004,-73.919905],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4561ebf0fb424cab804c60a42158afc6);
+            
+    
+            var popup_516dcb83fbda48d1a2f8aab4ae94a833 = L.popup({maxWidth: '300'});
+
+            
+                var html_015f31de397e429d9d333842589f15c6 = $('<div id="html_015f31de397e429d9d333842589f15c6" style="width: 100.0%; height: 100.0%;">Paerdegat Library - Cluster 2<br> Top 2 venues: food, shops<br> Bottom 2 venues: nightlife, education</div>')[0];
+                popup_516dcb83fbda48d1a2f8aab4ae94a833.setContent(html_015f31de397e429d9d333842589f15c6);
+            
+
+            circle_marker_3dc746c4e1ac45f889d101a289ccde59.bindPopup(popup_516dcb83fbda48d1a2f8aab4ae94a833);
+
+            
+        
+    
+            var circle_marker_2a2207b10ee54817bb568c4f9e267774 = L.circleMarker(
+                [40.6701033,-73.9859723],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4561ebf0fb424cab804c60a42158afc6);
+            
+    
+            var popup_3758f67ec8d2451c967a68d32283fcc5 = L.popup({maxWidth: '300'});
+
+            
+                var html_c14618044231421ea53ffdf66a560b16 = $('<div id="html_c14618044231421ea53ffdf66a560b16" style="width: 100.0%; height: 100.0%;">Park Slope Library - Cluster 0<br> Top 2 venues: food, shops<br> Bottom 2 venues: building, travel</div>')[0];
+                popup_3758f67ec8d2451c967a68d32283fcc5.setContent(html_c14618044231421ea53ffdf66a560b16);
+            
+
+            circle_marker_2a2207b10ee54817bb568c4f9e267774.bindPopup(popup_3758f67ec8d2451c967a68d32283fcc5);
+
+            
+        
+    
+            var circle_marker_ccc28db3548b438cb875e15e1798f2b0 = L.circleMarker(
+                [40.67525405,-74.01034734881583],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4561ebf0fb424cab804c60a42158afc6);
+            
+    
+            var popup_6cc3f3fd060644d5958a0091623c948b = L.popup({maxWidth: '300'});
+
+            
+                var html_432a4a38206b47fb93a8c7536c5bf993 = $('<div id="html_432a4a38206b47fb93a8c7536c5bf993" style="width: 100.0%; height: 100.0%;">Red Hook Library - Cluster 0<br> Top 2 venues: food, shops<br> Bottom 2 venues: building, travel</div>')[0];
+                popup_6cc3f3fd060644d5958a0091623c948b.setContent(html_432a4a38206b47fb93a8c7536c5bf993);
+            
+
+            circle_marker_ccc28db3548b438cb875e15e1798f2b0.bindPopup(popup_6cc3f3fd060644d5958a0091623c948b);
+
+            
+        
+    
+            var circle_marker_955180998f7040efa3784b6b655d62c3 = L.circleMarker(
+                [40.6486404,-73.93039748189646],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4561ebf0fb424cab804c60a42158afc6);
+            
+    
+            var popup_b8d1b7b05402460890a85242436e7374 = L.popup({maxWidth: '300'});
+
+            
+                var html_40535b6db3e046e9895ef200f1b7aa41 = $('<div id="html_40535b6db3e046e9895ef200f1b7aa41" style="width: 100.0%; height: 100.0%;">Rugby Library - Cluster 2<br> Top 2 venues: food, shops<br> Bottom 2 venues: education, building</div>')[0];
+                popup_b8d1b7b05402460890a85242436e7374.setContent(html_40535b6db3e046e9895ef200f1b7aa41);
+            
+
+            circle_marker_955180998f7040efa3784b6b655d62c3.bindPopup(popup_b8d1b7b05402460890a85242436e7374);
+
+            
+        
+    
+            var circle_marker_780a8337a513452ea3de55b6c26f3df4 = L.circleMarker(
+                [40.61591115,-73.97604254169245],
+                {
+  "bubblingMouseEvents": true,
+  "color": "orange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4561ebf0fb424cab804c60a42158afc6);
+            
+    
+            var popup_06111aa8532e470c81cdc55c8ffe56ec = L.popup({maxWidth: '300'});
+
+            
+                var html_f3806c1a81c74fcba8da30daf056eea2 = $('<div id="html_f3806c1a81c74fcba8da30daf056eea2" style="width: 100.0%; height: 100.0%;">Ryder Library - Cluster 1<br> Top 2 venues: shops, food<br> Bottom 2 venues: education, building</div>')[0];
+                popup_06111aa8532e470c81cdc55c8ffe56ec.setContent(html_f3806c1a81c74fcba8da30daf056eea2);
+            
+
+            circle_marker_780a8337a513452ea3de55b6c26f3df4.bindPopup(popup_06111aa8532e470c81cdc55c8ffe56ec);
+
+            
+        
+    
+            var circle_marker_0c387b868e1e474cbfaf4a6ac2103984 = L.circleMarker(
+                [40.68481445000001,-73.91515291773773],
+                {
+  "bubblingMouseEvents": true,
+  "color": "orange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4561ebf0fb424cab804c60a42158afc6);
+            
+    
+            var popup_1a9e2656532941bf83058cfc3003a350 = L.popup({maxWidth: '300'});
+
+            
+                var html_2ad92eb1e4984d48a0c1cff0f9e2d73a = $('<div id="html_2ad92eb1e4984d48a0c1cff0f9e2d73a" style="width: 100.0%; height: 100.0%;">Saratoga Library - Cluster 1<br> Top 2 venues: food, shops<br> Bottom 2 venues: nightlife, education</div>')[0];
+                popup_1a9e2656532941bf83058cfc3003a350.setContent(html_2ad92eb1e4984d48a0c1cff0f9e2d73a);
+            
+
+            circle_marker_0c387b868e1e474cbfaf4a6ac2103984.bindPopup(popup_1a9e2656532941bf83058cfc3003a350);
+
+            
+        
+    
+            var circle_marker_7c4977c93cbd4bb2ad23c6152cefd9b6 = L.circleMarker(
+                [40.58694439999999,-73.95527779999999],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4561ebf0fb424cab804c60a42158afc6);
+            
+    
+            var popup_0df1bb0d169749fc8aef272f1cd66d34 = L.popup({maxWidth: '300'});
+
+            
+                var html_b687ad704d224973ac34beb3a154ad59 = $('<div id="html_b687ad704d224973ac34beb3a154ad59" style="width: 100.0%; height: 100.0%;">Sheepshead Bay Library - Cluster 0<br> Top 2 venues: food, shops<br> Bottom 2 venues: travel, education</div>')[0];
+                popup_0df1bb0d169749fc8aef272f1cd66d34.setContent(html_b687ad704d224973ac34beb3a154ad59);
+            
+
+            circle_marker_7c4977c93cbd4bb2ad23c6152cefd9b6.bindPopup(popup_0df1bb0d169749fc8aef272f1cd66d34);
+
+            
+        
+    
+            var circle_marker_91e8b446394549cf8d033f41d2397bc2 = L.circleMarker(
+                [40.653299100000005,-73.88592835828828],
+                {
+  "bubblingMouseEvents": true,
+  "color": "orange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4561ebf0fb424cab804c60a42158afc6);
+            
+    
+            var popup_0a9992901601439db52baac51a0e979c = L.popup({maxWidth: '300'});
+
+            
+                var html_f9d0baeea2174bae86d3f72347840604 = $('<div id="html_f9d0baeea2174bae86d3f72347840604" style="width: 100.0%; height: 100.0%;">Spring Creek Library - Cluster 1<br> Top 2 venues: food, shops<br> Bottom 2 venues: nightlife, education</div>')[0];
+                popup_0a9992901601439db52baac51a0e979c.setContent(html_f9d0baeea2174bae86d3f72347840604);
+            
+
+            circle_marker_91e8b446394549cf8d033f41d2397bc2.bindPopup(popup_0a9992901601439db52baac51a0e979c);
+
+            
+        
+    
+            var circle_marker_fddd6435a099422c8ac41bbc02db2b94 = L.circleMarker(
+                [40.6644566,-73.90520859465275],
+                {
+  "bubblingMouseEvents": true,
+  "color": "orange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4561ebf0fb424cab804c60a42158afc6);
+            
+    
+            var popup_4b1d471898dd4b66b67da5f32e06681a = L.popup({maxWidth: '300'});
+
+            
+                var html_9e2da52e285844e28cdaa59ccaabacb0 = $('<div id="html_9e2da52e285844e28cdaa59ccaabacb0" style="width: 100.0%; height: 100.0%;">Stone Avenue Library - Cluster 1<br> Top 2 venues: shops, food<br> Bottom 2 venues: nightlife, education</div>')[0];
+                popup_4b1d471898dd4b66b67da5f32e06681a.setContent(html_9e2da52e285844e28cdaa59ccaabacb0);
+            
+
+            circle_marker_fddd6435a099422c8ac41bbc02db2b94.bindPopup(popup_4b1d471898dd4b66b67da5f32e06681a);
+
+            
+        
+    
+            var circle_marker_5689d8c2e58e4ee3ac3fec518f7c629a = L.circleMarker(
+                [40.64591865,-74.01361724188719],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4561ebf0fb424cab804c60a42158afc6);
+            
+    
+            var popup_986e3c6fa16b442c9b1bf09dcc84ea1e = L.popup({maxWidth: '300'});
+
+            
+                var html_94b98e650f71448d80dae46e82ba7ba2 = $('<div id="html_94b98e650f71448d80dae46e82ba7ba2" style="width: 100.0%; height: 100.0%;">Sunset Park Library - Cluster 2<br> Top 2 venues: food, shops<br> Bottom 2 venues: travel, parks_outdoors</div>')[0];
+                popup_986e3c6fa16b442c9b1bf09dcc84ea1e.setContent(html_94b98e650f71448d80dae46e82ba7ba2);
+            
+
+            circle_marker_5689d8c2e58e4ee3ac3fec518f7c629a.bindPopup(popup_986e3c6fa16b442c9b1bf09dcc84ea1e);
+
+            
+        
+    
+            var circle_marker_b18f71c45eaa43e2b9e61e81badc5a36 = L.circleMarker(
+                [40.59263370000001,-73.9886505986298],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4561ebf0fb424cab804c60a42158afc6);
+            
+    
+            var popup_4ffdf9a1d7964b908895e029159ee32b = L.popup({maxWidth: '300'});
+
+            
+                var html_4d1f14488a1649759cb63713cdb7557d = $('<div id="html_4d1f14488a1649759cb63713cdb7557d" style="width: 100.0%; height: 100.0%;">Ulmer Park Library - Cluster 2<br> Top 2 venues: food, shops<br> Bottom 2 venues: education, building</div>')[0];
+                popup_4ffdf9a1d7964b908895e029159ee32b.setContent(html_4d1f14488a1649759cb63713cdb7557d);
+            
+
+            circle_marker_b18f71c45eaa43e2b9e61e81badc5a36.bindPopup(popup_4ffdf9a1d7964b908895e029159ee32b);
+
+            
+        
+    
+            var circle_marker_85a3ff7e319842d281b4d63417c71130 = L.circleMarker(
+                [40.69447285,-73.9777358589643],
+                {
+  "bubblingMouseEvents": true,
+  "color": "orange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4561ebf0fb424cab804c60a42158afc6);
+            
+    
+            var popup_3e691e866ce948a2ad81aba1eb1a638f = L.popup({maxWidth: '300'});
+
+            
+                var html_aa9d93487a474aea87fafbc177602db0 = $('<div id="html_aa9d93487a474aea87fafbc177602db0" style="width: 100.0%; height: 100.0%;">Walt Whitman Library - Cluster 1<br> Top 2 venues: food, shops<br> Bottom 2 venues: travel, nightlife</div>')[0];
+                popup_3e691e866ce948a2ad81aba1eb1a638f.setContent(html_aa9d93487a474aea87fafbc177602db0);
+            
+
+            circle_marker_85a3ff7e319842d281b4d63417c71130.bindPopup(popup_3e691e866ce948a2ad81aba1eb1a638f);
+
+            
+        
+    
+            var circle_marker_26f153d82b664b6e82233f17d2458830 = L.circleMarker(
+                [40.69747665,-73.91221439936335],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4561ebf0fb424cab804c60a42158afc6);
+            
+    
+            var popup_fc584eff07f44790ae31d6a76eabea71 = L.popup({maxWidth: '300'});
+
+            
+                var html_b805004f720f4223b989810afe380842 = $('<div id="html_b805004f720f4223b989810afe380842" style="width: 100.0%; height: 100.0%;">Washington Irving Library - Cluster 0<br> Top 2 venues: food, shops<br> Bottom 2 venues: parks_outdoors, arts_entertainment</div>')[0];
+                popup_fc584eff07f44790ae31d6a76eabea71.setContent(html_b805004f720f4223b989810afe380842);
+            
+
+            circle_marker_26f153d82b664b6e82233f17d2458830.bindPopup(popup_fc584eff07f44790ae31d6a76eabea71);
+
+            
+        
+    
+            var circle_marker_9c3303b3dfe44d288a34a4280c16ec9f = L.circleMarker(
+                [40.7069101,-73.95753712909968],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4561ebf0fb424cab804c60a42158afc6);
+            
+    
+            var popup_b363a64220fb4bd588b33afe98cef6a5 = L.popup({maxWidth: '300'});
+
+            
+                var html_c357a52e1ac04593883136b15ed1c960 = $('<div id="html_c357a52e1ac04593883136b15ed1c960" style="width: 100.0%; height: 100.0%;">Williamsburgh Library - Cluster 2<br> Top 2 venues: food, nightlife<br> Bottom 2 venues: travel, education</div>')[0];
+                popup_b363a64220fb4bd588b33afe98cef6a5.setContent(html_c357a52e1ac04593883136b15ed1c960);
+            
+
+            circle_marker_9c3303b3dfe44d288a34a4280c16ec9f.bindPopup(popup_b363a64220fb4bd588b33afe98cef6a5);
+
+            
+        
+    
+            var circle_marker_4ed7e12aee094702915ab13a52168260 = L.circleMarker(
+                [40.64876255,-73.97677818549374],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4561ebf0fb424cab804c60a42158afc6);
+            
+    
+            var popup_3857e507be844441a854356cbeef0a86 = L.popup({maxWidth: '300'});
+
+            
+                var html_b81cba80620d4d98abebb8f260c3fd20 = $('<div id="html_b81cba80620d4d98abebb8f260c3fd20" style="width: 100.0%; height: 100.0%;">Windsor Terrace Library - Cluster 0<br> Top 2 venues: food, shops<br> Bottom 2 venues: travel, education</div>')[0];
+                popup_3857e507be844441a854356cbeef0a86.setContent(html_b81cba80620d4d98abebb8f260c3fd20);
+            
+
+            circle_marker_4ed7e12aee094702915ab13a52168260.bindPopup(popup_3857e507be844441a854356cbeef0a86);
+
+            
+        
+</script>
