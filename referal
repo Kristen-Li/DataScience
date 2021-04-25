@@ -1,0 +1,49 @@
+1. Suppose Jerry gets 5% commission from the car insurance companies. Further suppose that the discounts (rewards, coupons and etc.)  are offered by Jerry.
+Hence, the insurance companies get "total" bills before discounts, and then give 5% of them to Jerry. 
+
+Now I want to isoloate the costs of this referal rewards program from other kinds of discounts: 10 dollars for a referring user and 20 dollars for a refered user. 
+
+-- Who are the new customers acquired through the referral program?
+SELECT user_id FROM user WHERE referring_user_id IS NOT NULL
+
+-- Who are the referring customers? 
+SELECT referring_user_id FROM user WHERE referring_user id is NOT NULL
+
+-- Total 10 dollars cost from referring customers. 
+SELECT 10*COUNT(referring_user_id) FROM USER WHERE referring_user id is NOT NULL
+
+-- Total 20 dollars cost from refered customer?
+SELECT 20*COUNT(id) FROM USER WHERE referring_user id is NOT NULL
+
+-- The total before-discount bills from the new customers acquired through the referral program?
+SELECT p.total 
+FROM PURCHASE p
+JOIN USER u
+ON PURCHASE.user_id = USER.id
+WHERE u.referring_user_id IS NOT NULL
+
+-- Total after-discount bills from the new customers acquired through the referral program?
+SELECT (p.total - p.discounts) final_bills_new_customers
+FROM PURCHASE p
+JOIN USER u
+ON PURCHASE.user_id = USER.id
+WHERE u.referring_user_id IS NOT NULL
+
+-- Commision income Jerry.AI gets
+SELECT 0.05*p.total as commission 
+FROM PURCHASE p
+JOIN USER u
+ON PURCHASE.user_id = USER.id
+WHERE u.referring_user_id IS NOT NULL
+
+
+2. Will keep the program running if the extra commission income from the new refered users exceed the program rewards costs. (Ignores other program implimentation  costs)
+Suppose the program has been ran for 3 months.
+If the following SQL query returns a positive extra_income, this program can be kept. 
+
+SELECT (0.05*sum(p.total) - 10*COUNT(u.referring_user_id) - 20*COUNT(u.id) ) AS extra_income
+FROM PURCHASE p
+JOIN USER u
+ON PURCHASE.user_id = USER.id
+WHERE u.referring_user_id IS NOT NULL
+AND p.date >= date_sub(now(), interval 3 month)
