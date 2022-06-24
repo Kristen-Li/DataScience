@@ -1,0 +1,118 @@
+i_list = 12:12:228;
+T_q1 = [];
+T_q10 = [];
+load key2.mat;
+
+for i = i_list
+    i
+    filename = strcat('model_pca_', num2str(i),'.mat');
+    m = matfile(filename);
+    temp = m.y_pca_all; %not use hat, but to use the real y, with estimated w
+    q1_all = logical(m.q1_all); % boolean values for stocks in decile 1
+    q10_all = logical(m.q10_all);
+    temp1 = [[temp(q1_all),m.equal_weight1_all,m.value_weight1_all]]; % return, weight
+    temp10 = [[temp(q10_all),m.equal_weight10_all,m.value_weight10_all]]; % return, weight
+    key_test = key{:,:}; %id, risk free return and time
+    key_test = key_test(key_test(:,3)>=i-12+241 & key_test(:,3)<=i+240  ,:);
+    key_test_1 = key_test(q1_all,:);
+    key_test_10 = key_test(q10_all,:);
+    T_q1 = [T_q1;temp1,key_test_1];    
+    T_q10 = [T_q10;temp10,key_test_10];
+
+
+    error_sqr_pca(i-11:i,1) = m.error_sqr_pca(i-11:i,:);
+    error_sqr_pca_top(i-11:i,1) = m.error_sqr_pca_top(i-11:i,:);
+    error_sqr_pca_bottom(i-11:i,1) = m.error_sqr_pca_bottom(i-11:i,:);
+    
+    rp_vw_pca(i-11:i,:) = m.rp_vw_pca(i-11:i,:);
+    rp_real_vw_pca(i-11:i,:) = m.rp_real_vw_pca(i-11:i,:);
+    rp_ew_pca(i-11:i,:) = m.rp_ew_pca(i-11:i,:);
+    rp_real_ew_pca(i-11:i,:) = m.rp_real_ew_pca(i-11:i,:);
+    
+    endsize=size(m.fvu_pca,1);
+    y_test_pca(i-11:min(endsize,i),:) = m.fvu_pca(i-11:i,:);
+    y_test_pca_top(i-11:min(endsize,i),:) = m.fvu_pca_top(i-11:min(endsize,i),:);
+    y_test_pca_bottom(i-11:min(endsize,i),:) = m.fvu_pca_bottom(i-11:min(endsize,i),:);
+    
+end
+ncomp_pca = m.ncomp_pca;
+%out-of-sample stock-level prediction performance (percentage R_sqared)
+r_sqr_pca = 1-sum(error_sqr_pca)/sum(y_test_pca);
+r_sqr_pca_top = 1-sum(error_sqr_pca_top)/sum(y_test_pca_top);
+r_sqr_pca_bottom = 1-sum(error_sqr_pca_bottom)/sum(y_test_pca_bottom);
+pred_vw_pca = mean(rp_vw_pca,1)'*100;
+avg_vw_pca = mean(rp_real_vw_pca,1)'*100;
+sd_vw_pca = std(rp_real_vw_pca,1)'*100;
+sr_vw_pca = avg_vw_pca./sd_vw_pca*sqrt(12); %annualized sr
+
+
+pred_ew_pca = mean(rp_ew_pca,1)'*100;
+avg_ew_pca = mean(rp_real_ew_pca,1)'*100;
+sd_ew_pca = std(rp_real_ew_pca,1)'*100;
+sr_ew_pca = avg_ew_pca./sd_ew_pca*sqrt(12); %annualized sr
+
+% cumulative returns for value and equal weighted portfolio, L, H , H-L
+test_size = size(rp_ew_pca,1);
+cumul_ret_pca = zeros(test_size,6);
+cumul_ret_pca (1,1:3) = (1+rp_real_vw_pca(1,[1,end-1,end]));
+cumul_ret_pca (1,4:6) = (1+rp_real_ew_pca(1,[1,end-1,end]));
+
+start = -inf(1,6);
+maxdd = -inf(1,6);
+for t = 1: test_size-1
+   cumul_ret_pca (t+1,1:3) = ((1+rp_real_vw_pca(t+1,[1,end-1,end]))).*cumul_ret_pca(t,1:3); 
+   cumul_ret_pca (t+1,4:6) = ((1+rp_real_ew_pca(t+1,[1,end-1,end]))).* cumul_ret_pca(t,4:6); 
+   for j = 1:6
+       if cumul_ret_pca(t+1,j) > cumul_ret_pca(t,j)
+           start(1,j) = max(start(1,j),cumul_ret_pca(t+1,j));
+       else
+           % maximum percentage change in cumulative returns
+           maxdd(1,j)= max(maxdd(1,j), (start(1,j)-cumul_ret_pca(t+1,j))/(start(1,j)));
+       end
+   end
+  
+end
+
+max_loss = min(rp_real_vw_pca);
+cumul_sorted = sort(cumul_ret_pca);
+maxdd = 100*maxdd;
+% turnover for the first decile
+F = array2table(T_q1,'VariableNames',{'return_next','eweight','vweight','permno','rf','time'});
+tover=zeros(240,1);
+for t = 241:467
+    T1 = F(F.time == t,[1,2,3,4]);
+    T2 = F(F.time == (t+1),[2,3,4]);
+    
+    T2.Properties.VariableNames = {'eweight_next', 'vweight_next', 'permno' };
+
+    T= outerjoin(T1,T2,'MergeKeys',true);
+    for i=1:6
+        T.(i)(isnan(T.(i))) = 0; 
+    end
+    tover(t-240) = sum(abs((ones(size(T,1),1)+T.return_next.*T.eweight).*T.eweight_next-(ones(size(T,1),1)+T.return_next).*T.eweight));
+end
+turnover1 = mean(abs(tover));
+% turnover for the last decile
+F = array2table(T_q10,'VariableNames',{'return_next','eweight','vweight','permno','rf','time'});
+tover=zeros(240,1);
+for t = 241:467
+    T1 = F(F.time == t,[1,2,3,4]);
+    T2 = F(F.time == (t+1),[2,3,4]);
+    
+    T2.Properties.VariableNames = {'eweight_next', 'vweight_next', 'permno' };
+
+    T= outerjoin(T1,T2,'MergeKeys',true);
+    for i=1:6
+        T.(i)(isnan(T.(i))) = 0; 
+    end
+    tover(t-240) = sum(abs((ones(size(T,1),1)+T.return_next.*T.eweight).*T.eweight_next-(ones(size(T,1),1)+T.return_next).*T.eweight));
+end
+turnover10 = mean(abs(tover));
+Model = [1:11]';
+return_results = [Model,pred_ew_pca,avg_ew_pca,sd_ew_pca,sr_ew_pca];
+return_results_vw = [Model,pred_vw_pca,avg_vw_pca,sd_vw_pca,sr_vw_pca];
+
+Return = array2table(return_results,'VariableNames',{'Model','Pred_Ret','Realized_Ret','STD','SR'});
+r_sqr_results = [r_sqr_pca,r_sqr_pca_bottom,r_sqr_pca_top]*100;
+R_Squared = array2table(r_sqr_results,'VariableNames',{'All','Top','Bottom'});
+%Others = array2table(results,'VariableNames',{'Max_Drawdowns%','Turnover%','Max 1M loss'});
